@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    height: 100vh;
+    overflow:hidden;
+}
+header .hero_image{
+    /* background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('https://pkru5516465147.files.wordpress.com/2014/09/20130922132337.jpg');
+    background-size: cover; */
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:20;
+}
+header img{
+    position: absolute;
+    z-index:25;
+    height: 50px;
+    top:10px;
+    left:150px;
+    pointer-events: none;
+}
+header a#logo{
+    z-index: 25;
+    position: absolute;
+    color:#fff;
+    font-size: 30px;
+    top:20px;
+    left:20px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+header a#logo:hover{
+    cursor: pointer;
+    color:tomato;
+    transition: all .3s ease;
+}
+header .hero_content h1{
+    font-size:70px;
+}
+header .hero_content h3{
+    font-size:40px;
+}
+header .hero_content h3 span{
+    color:tomato;
+    
+}
+header .hero_content{
+    text-align:center;
+    z-index: 25;
+    color:#fff;
+}
+header .continue{
+    position:absolute;
+    z-index: 25;
+    color:#fff;
+    bottom:50px;
+    text-align:center;
+    pointer-events: none;
+}
+section{
+    height:100vh;
+    background:#122946;
+    display:flex;
+    justify-content: center;
+    gap: 300px;
+    text-align: left;
+    font-size: 40px;
+    color:tomato;
+    padding-top: 130px;
+}
+section a{
+    color:#fff;
+}
+section a:hover{
+    color:tomato;
+}
+button{
+    position: absolute;
+    padding:.4rem 1rem;
+    color:#fff;
+    font-size:18px;
+    background:tomato;
+    border:2px solid transparent;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -250px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.hero_content img{
+    width:800px;
+    height: 600px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+button:hover + img{
+    opacity: 1;
+    transform: translate(-50%,-45%);
+    transition: all .3s ease;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all .3s ease;
+}

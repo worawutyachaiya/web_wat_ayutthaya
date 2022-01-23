@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wat | ayutthaya</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero_image" id="hero_image"></div>
+        <img id="logo" src="image/logoindex.png" alt="">
+        <div class="hero_content" id="hero_content">
+            <h1>วัดสวย ๆ ใน อยุธยา ที่คุณห้ามพลาด</h1>
+            <h3>ไหว้พระดีต่อใจไปกับ <span>15</span> วัดที่เราแนะนำ</h3>
+        </div>
+        <div class="continue" id="continue">
+            <p>Scroll down to continue</p>
+            <span>v</span><br>
+            <span>v</span>
+        </div>
+    </header>
+    <section>
+        <div class="left">
+            <ul>
+                <li><a href="wat_1.html">วัดใหญ่ชัยมงคล</a></li>
+                <li><a href="wat_2.html">วัดพนัญเชิงวรวิหาร</a></li>
+                <li><a href="wat_3.html">วัดพุทไธศวรรย์</a></li>
+                <li><a href="wat_4.html">วัดไชยวัฒนาราม</a></li>
+                <li><a href="wat_5.html">วัดพระศรีสรรเพชญ์</a></li>
+                <li><a href="wat_6.html">วัดมหาธาตุ</a></li>
+                <li><a href="wat_7.html">วิหารพระมงคลบพิตร</a></li>
+                <li><a href="wat_8.html">วัดราชบูรณะ</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="wat_9.html">วัดธรรมิกราช</a></li>
+                <li><a href="wat_10.html">วัดกษัตราธิราชวรวิหาร</a></li>
+                <li><a href="wat_11.html">วัดมเหยงคณ์</a></li>
+                <li><a href="wat_12.html">วัดโลกยสุธาราม</a></li>
+                <li><a href="wat_13.html">วัดพระราม</a></li>
+                <li><a href="wat_14.html">วัดนิเวศธรรมประวัติราชวรวิหาร</a></li>
+                <li><a href="wat_15.html">ปราสาทนครหลวง</a></li>
+            </ul>
+        </div>
+    </section>
+    <div id="list"></div>
+    
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+        el: "#hero_image",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        quantity: 3.00
+        })
+        </script>
+</body>
+</html>
